@@ -1,0 +1,7 @@
+{
+  "name": "EMPIRE-2nd Draft",
+  "description": "The central hub of the Empire Business Family, featuring modular divisions for Label services and Multimedia production.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
