@@ -310,12 +310,14 @@ Please change the parent <Route path="${S}"> to <Route path="${S==="/"?"*":`${S}
                 background-size: contain;       
                 background-position: center;
                 background-repeat: no-repeat; 
-                width: 75%;
+                width: 100%;
                 margin: 50px;
                 border-radius: 2.5%;
                 
                 /* Mobile sizing base */
                 height: 280px;
+                filter: brightness(0.8);
+                filter: contrast(0.8);
               }
             
               @media (min-width: 640px) {
