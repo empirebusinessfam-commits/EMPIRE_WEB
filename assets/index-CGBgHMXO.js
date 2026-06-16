@@ -313,7 +313,8 @@ Please change the parent <Route path="${S}"> to <Route path="${S==="/"?"*":`${S}
                 
                 /* Mobile sizing base */
                 height: 280px;
-                filter: brightness(0.8) contrast(0.8) opacity(0.5);
+                filter: brightness(0.8) contrast(0.8) opacity(0.9);
+                border-radius: 2.5%;
               }
             
               @media (min-width: 640px) {
