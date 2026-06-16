@@ -287,7 +287,7 @@ Please change the parent <Route path="${S}"> to <Route path="${S==="/"?"*":`${S}
                 /* Positioning logic */
                 position: absolute; 
                 top: 5px;                    /* Spacing from the top edge (matches your px-6 padding) */
-                left: 5px;                   /* Spacing from the left edge */
+                right: 5px;                   /* Spacing from the left edge */
                 
                 /* Responsive sizing */
                 width: 120px;                 /* Mobile size */
@@ -307,12 +307,12 @@ Please change the parent <Route path="${S}"> to <Route path="${S==="/"?"*":`${S}
             /* UNIVERSALLY SCALING DATA VIZ */
               .dataViz {
                 background-image: url("/img/one_pgr.png"); 
-                background-size: cover;       
+                background-size: contain;       
                 background-position: center;
                 background-repeat: no-repeat; 
                 width: 75%;
-                margin: 2.5%;
-                border-radius: 1rem;
+                margin: 50px;
+                border-radius: 2.5%;
                 
                 /* Mobile sizing base */
                 height: 280px;
@@ -321,7 +321,6 @@ Please change the parent <Route path="${S}"> to <Route path="${S==="/"?"*":`${S}
               @media (min-width: 640px) {
                 .dataViz {
                   height: auto;
-                  aspect-ratio: 16 / 9;
                   max-height: 550px;
                 }
             }
