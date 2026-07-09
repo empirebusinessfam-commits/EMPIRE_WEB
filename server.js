@@ -38,11 +38,20 @@ app.post('/api/tasks', (req, res) => {
 // ==========================================
 // 2. COMMAND CENTER ALERTS (SMS via SMTP)
 // ==========================================
+// const transporter = nodemailer.createTransport({
+//   service: 'gmail',
+//   auth: {
+//     user: 'sami@versawear.org', 
+//     pass: 'hprulpchedmqbpee' 
+//   }
+// });
 const transporter = nodemailer.createTransport({
-  service: 'gmail',
+  host: 'smtp.gmail.com',
+  port: 465,
+  secure: true, // true for 465, false for other ports
   auth: {
     user: 'sami@versawear.org', 
-    pass: 'hprulpchedmqbpee' 
+    pass: 'hprulpchedmqbpee' // Keep your space-free app password here
   }
 });
 
