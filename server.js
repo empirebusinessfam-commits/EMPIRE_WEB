@@ -7,7 +7,7 @@ const app = express();
 // --- SECURITY & CORS CONFIGURATION ---
 // Configured to allow requests specifically from your live domain
 app.use(cors({
-  origin: 'https://embirebusinessfamily.com',
+  origin: 'https://empirebusinessfamily.com',
   methods: ['POST', 'GET'],
   credentials: true
 }));
