@@ -48,10 +48,13 @@ app.post('/api/tasks', (req, res) => {
 const transporter = nodemailer.createTransport({
   host: 'smtp.gmail.com',
   port: 465,
-  secure: true, // true for 465, false for other ports
+  secure: true, // Forces SSL
+  connectionTimeout: 10000, // 10 seconds timeout
+  greetingTimeout: 10000,
+  socketTimeout: 10000,
   auth: {
-    user: 'sami@versawear.org', 
-    pass: 'hprulpchedmqbpee' // Keep your space-free app password here
+    user: 'sami@versawear.org',
+    pass: 'hprulpchedmqbpee' // Your clean, space-free app password
   }
 });
 
