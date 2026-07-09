@@ -38,7 +38,7 @@ app.post('/api/tasks', (req, res) => {
 // 2. COMMAND CENTER ALERTS (SMS via Resend HTTP API)
 // ==========================================
 // Replace 're_your_actual_key_here' with the API key from your Resend Dashboard
-const resend = new Resend('re_your_actual_key_here'); 
+const resend = new Resend('re_R7mGThMn_7h6WNhB6rcMo3i4gDZqFuvJz'); 
 
 app.post('/api/send-text', async (req, res) => {
   console.log("--- PING REQUEST RECEIVED ---"); 
