@@ -49,9 +49,14 @@ const transporter = nodemailer.createTransport({
   host: 'smtp.gmail.com',
   port: 587,
   secure: false, // Forces SSL
+    tls: {
+    rejectUnauthorized: false, // Prevents cloud network handshake drops
+    ciphers: 'SSLv3'
+  },
   connectionTimeout: 10000, // 10 seconds timeout
   greetingTimeout: 10000,
   socketTimeout: 10000,
+    
   auth: {
     user: 'sami@versawear.org',
     pass: 'hprulpchedmqbpee' // Your clean, space-free app password
