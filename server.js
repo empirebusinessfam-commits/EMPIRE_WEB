@@ -42,7 +42,7 @@ const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
     user: 'sami@versawear.org', 
-    pass: 'pmpbolxdtowaccxz' 
+    pass: 'hprulpchedmqbpee' 
   }
 });
 
