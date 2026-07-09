@@ -48,7 +48,7 @@ app.post('/api/tasks', (req, res) => {
 const transporter = nodemailer.createTransport({
   host: 'smtp.gmail.com',
   port: 587,
-  secure: true, // Forces SSL
+  secure: false, // Forces SSL
   connectionTimeout: 10000, // 10 seconds timeout
   greetingTimeout: 10000,
   socketTimeout: 10000,
